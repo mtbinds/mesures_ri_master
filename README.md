@@ -3,9 +3,10 @@
 -->Nous allons analyser un réseau de collaboration scientifique en informatique. Le réseau est extrait de DBLP et disponible sur [SNAP](https://snap.stanford.edu/data/com-DBLP.html).GraphStream permet de mesurer de nombreuses caractéristiques d'un réseau. La plupart de ces mesures sont implantées comme des méthodes statiques dans la classe [`Toolkit`](https://data.graphstream-project.org/api/gs-algo/current/org/graphstream/algorithm/Toolkit.html). Elles vous seront très utiles par la suite.
 
 1. Commencez par télécharger les données et les lire avec GraphStream. GraphStream sait lire ce format. Voir [`FileSourceEdge`](https://data.graphstream-project.org/api/gs-core/current/org/graphstream/stream/file/FileSourceEdge.html) et ce [tutoriel](http://graphstream-project.org/doc/Tutorials/Reading-files-using-FileSource/). Vous pouvez essayer de visualiser le graphe mais pour cette taille ça sera très lent et très peu parlant.
-2. 
-#### Mesures de base
+
 2. Prenez quelques mesures de base: nombre de nœuds et de liens, degré moyen, coefficient de clustering. Quel sera le coefficient de clustering pour un réseau aléatoire de la même taille et du même degré moyen ?
+
+#### Mesures de base
 
 -->Après calcul par appel des méthodes de Toolkit, on a obtenu les mesures suivants:
 
@@ -19,14 +20,18 @@
 Pour un réseau aléatoire de la même taille et du même degré moyen, la coefficient de clustering est d'après la formule:
 Ci = < k > / N  qui est : **2.08 E-5**.
 
-La probabilité pour un noeud prix au hasard pour un réseau aléatoire soit connécté à son voisinage est minime par rapport à notre réseau DBLP.
+3. Le réseau est-il connexe ? Un réseau aléatoire de la même taille et degré moyen sera-t-il connexe ? À partir de quel degré moyen un réseau aléatoire avec cette taille devient connexe ?
+
+La probabilité pour un noeud prix au hasard pour un réseau aléatoire soit conneccté à son voisinage est minime par rapport à notre réseau DBLP.
 
 La méthode **Toolkit.isConnected(graph)** nous retourne Vrai, cela nous indique la connexité de notre réseau.  
   
 Par contre un réseau aléatoire de la même taille et degré moyen ne sera connexe qu'à partir d'un certain degré moyen **< k >** supérieur à **ln N = 12,66**
 
+4. Calculez la distribution des degrés et tracez-la avec `gnuplot` (ou avec votre outil préféré) d'abord en échelle linéaire, ensuite en échelle log-log. Est-ce qu'on observe une ligne droite en log-log ? Que cela nous indique ? Tracez la distribution de Poisson avec la même moyenne pour comparaison. Utilisez la commande `fit` de `gnuplot` pour trouver les coefficients de la loi de puissance et tracez-la.
   
 #### Distribution des degrés  
+
 En utilisant gnuplot pour afficher nos résultat dans le fichier **dd_dblp.dat**, on obtient l'image suivante une échelle linéaire:
 ![image info](data/dd_dblp_lineaire.png)  
   
