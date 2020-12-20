@@ -67,14 +67,15 @@ La distribution des distances indique la probabilité qu'un
 Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le coefficient de Clustering
 
 
-    - Graphe aléatoire :
+    - 
+> Graphe aléatoire :
 
-    | Mesures               | Résultats |
-    | :-------------------- | :-------: |
-    | $`N`$                 |  317088   |
-    | $`L`$                 |  1110910  |
-    | $`\langle k \rangle`$ | 7.0069508 |
-    | $`\langle C \rangle`$ | 2.1839707 |
+  | Mesures               | Résultats |
+  | :-------------------- | :-------: |
+  | $`N`$                 |  317088   |
+  | $`L`$                 |  1110910  |
+  | $`\langle k \rangle`$ | 7.0069508 |
+  | $`\langle C \rangle`$ | 2.1839707 |
     
 
     
@@ -82,7 +83,8 @@ Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le c
 ![distribution des distances](/images/ddistance_random.png)
 
 
-    - Graphe préférentiel :
+
+> Graphe préférentiel :
 
     | Mesures               | Résultats |
     | :-------------------- | :-------: |
