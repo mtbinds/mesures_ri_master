@@ -57,7 +57,8 @@ On peut en soutirer que notre réseau est un réseau de terrain.
 
 5. Maintenant on va calculer la distance moyenne dans le réseau. Le calcul des plus courts chemins entre toutes les paires de nœuds prendra plusieurs heures pour cette taille de réseau. C'est pourquoi on va estimer la distance moyenne par échantillonnage en faisant un parcours en largeur à partir de 1000 sommets choisis au hasard. L'hypothèse des six degrés de séparation se confirme-t-elle ? Est-ce qu'il s'agit d'un réseau petit monde ? Quelle sera la distance moyenne dans un réseau aléatoire avec les mêmes caractéristiques ? Tracez également la *distribution* des distances. Formulez une hypothèse sur la loi de cette distribution.
 
-##### Distribution des distances 
+#### Distribution des distances
+
 Pour savoir s'il s'agit d'un réseau "petit monde", il suffit de vérifier que $`\langle d \rangle = d_{max}`$ où $`d_{max} = \frac{\ln N}{\ln \langle k \rangle}`$.
    
 ![image info](data/plot_distances.png)
@@ -149,6 +150,27 @@ Le seuil épidémique du réseau avec stratégies d'immunisation seclective = 0.
 5. Que peut-on conclure ?
 
 Pour le cas de l'immunisation aléatoire, dans des conditions normales de simulation, on observe au mieux un ralentissement de la propagation du virus. Au contraire, la sélective permet d'entraver la propagation malgrès le fait que le nombre de noeuds immunisés soit inférieur ou égal à celui des immunisés aléatoirement. 
+
+
+6. Pour justifier l'efficacité de l'immunisation sélective, calculez le degré moyen des groupes 0 et 1.
+
+    $`\langle k \rangle (0) = 6.620`$
+   
+    $`\langle k \rangle (1) = 11.370`$
+
+7. Comment expliquez-vous la différence ?
+
+    Le groupe 1 manifeste une présence supérieur de hubs car ils ont une probabilité élevé d'être immunisés par un de leurs voisins.
+
+8.  Du point de vue du virus l'immunisation d'un nœud est équivalente à sa suppression du réseau. Calculez le seuil épidémique du réseau modifié pour chacune des deux stratégies d'immunisation et comparez avec le seuil épidémique du réseau initial.
+
+
+    $`\lambda c(aléatoire) \approx 0.046`$\
+    $`\lambda c(sélective) \approx 0.093`$
+
+    
+    Pour le réseau aléatoire, le seuil épidémique est approximativement égal à celui du réseau initial car la taille du réseau n'a pas d'influence sur son seuil épidémique.
+    Alors que le réseau sélectif a un seuil épidémique environ deux fois plus grand que les autres. On peut justifier cela par le fait qu'un grand nombre de hub soient retirés du réseau et donc limite la propagation.
 
 
 En utilisant gnuplot pour afficher nos résultat dans le fichier **epidemic_first_case.dat**, on obtient l'image suivante une échelle linéaire:
