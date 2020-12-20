@@ -8,7 +8,7 @@
 
 #### Mesures de base
 
--->Après calcul par appel des méthodes de Toolkit, on a obtenu les mesures suivants:
+Après calcul par appel des méthodes de Toolkit, on a obtenu les mesures suivants:
 
 | Mesures  | Valeur  | Signification  |
 |---|---|---|
@@ -53,6 +53,8 @@ On peut en soutirer que notre réseau est un réseau de terrain.
 * En estimant la distance moyenne par échantillonnage par un parcours en largeur à partir de 1000 sommets choisis au hasard, on obtient une valeur de 6.832.  
 * Ainsi l'hypothèse des **six degrés de séparation** est confirmé. Notre réseau est un petit monde.
 * Dans un réseau aléatoire de même caractéristiques, la distance moyenne sera de **6.78**.
+
+5. Maintenant on va calculer la distance moyenne dans le réseau. Le calcul des plus courts chemins entre toutes les paires de nœuds prendra plusieurs heures pour cette taille de réseau. C'est pourquoi on va estimer la distance moyenne par échantillonnage en faisant un parcours en largeur à partir de 1000 sommets choisis au hasard. L'hypothèse des six degrés de séparation se confirme-t-elle ? Est-ce qu'il s'agit d'un réseau petit monde ? Quelle sera la distance moyenne dans un réseau aléatoire avec les mêmes caractéristiques ? Tracez également la *distribution* des distances. Formulez une hypothèse sur la loi de cette distribution.
 
 ##### Distribution des distances 
 La distribution des distances indique la probabilité qu'un 
