@@ -1,4 +1,3 @@
-package ri.propagation.scenario;
 
 import java.util.Collection;
 import java.util.List;
