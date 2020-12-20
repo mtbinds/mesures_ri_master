@@ -169,9 +169,9 @@ Pour le cas de l'immunisation aléatoire, dans des conditions normales de simula
     $`\lambda c(sélective) \approx 0.093`$
 
     
-    Pour le réseau aléatoire, le seuil épidémique est approximativement égal à celui du réseau initial car la taille du réseau n'a pas d'influence sur son seuil épidémique.
-    Alors que le réseau sélectif a un seuil épidémique environ deux fois plus grand que les autres. On peut justifier cela par le fait qu'un grand nombre de hub soient retirés du réseau et donc limite la propagation.
+    Pour le réseau aléatoire, le seuil épidémique est approximativement égal à celui du réseau initial car la taille du réseau n'a pas d'influence sur son seuil épidémique.Alors que le réseau sélectif a un seuil épidémique environ deux fois plus grand que les autres. On peut justifier cela par le fait qu'un grand nombre de hub soient retirés du réseau et donc limite la propagation.
 
+9.  Simulez l'épidémie avec les mêmes hypothèses et les mêmes scénarios dans un réseau aléatoire et un réseau généré avec la méthode d'attachement préférentiel de la même taille et le même degré moyen. Comparez et commentez les résultats.
 
 En utilisant gnuplot pour afficher nos résultat dans le fichier **epidemic_first_case.dat**, on obtient l'image suivante une échelle linéaire:
 * la première simulation
