@@ -98,7 +98,7 @@ Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le c
 
 
 
-# Question 7
+#Question 7
  - Le generateur WattsStrogatzGenerator nous reproduit un coefficient de clustering plus petite avec un réseau connexe.
  - Le nombre d'arrêt dépend de la probabilité.
 
@@ -110,7 +110,12 @@ Nos collaborateurs scientifiques communiquent souvent par mail. Malheureusement 
 - Un individu envoie en moyenne un mail par semaine à chacun de ses collaborateurs.
 - Un individu met à jour son anti-virus en moyenne deux fois par mois. Cela nettoie son système mais ne le protège pas de nouvelles infections car le virus mute.
 - L'épidémie commence avec un individu infecté (patient zéro).
- 
+
+1. Quel est le taux de propagation du virus ? 
+
+    On a $`\beta = \frac{1}{7}`$ pour la probabilité de contaminer un collaborateur et $`\mu = \frac{1}{14}`$ pour la probabilité de mettre à jour son anti-virus.  
+
+    De ce fait, le taux de propagation $`\lambda = \frac{\beta}{\mu} = 2`$  
 
 Le rapport entre beta et mu nous donne le taux de propagation dans le réseau.  
  **beta = 1/7** car un individu envoie un mail par semaine en moyenne  
