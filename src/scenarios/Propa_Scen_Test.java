@@ -1,4 +1,3 @@
-
 import java.util.Collection;
 import java.util.List;
 import java.util.function.Consumer;
@@ -8,12 +7,6 @@ import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.stream.file.FileSourceDGS;
 import org.graphstream.stream.file.FileSourceEdge;
-
-import ri.propagation.scenario.Scenario;
-import ri.propagation.scenario.Scenario1;
-import ri.propagation.scenario.Scenario2;
-import ri.propagation.scenario.Scenario3;
-import ri.utils.GraphUtils;
 
 /**
  * <p>
