@@ -1,4 +1,4 @@
-# Mesures de réseaux d'interaction
+## TP1: Mesures de réseaux d'interaction
 
 Nous allons analyser un réseau de collaboration scientifique en informatique. Le réseau est extrait de DBLP et disponible sur [SNAP](https://snap.stanford.edu/data/com-DBLP.html).GraphStream permet de mesurer de nombreuses caractéristiques d'un réseau. La plupart de ces mesures sont implantées comme des méthodes statiques dans la classe [`Toolkit`](https://data.graphstream-project.org/api/gs-algo/current/org/graphstream/algorithm/Toolkit.html). Elles vous seront très utiles par la suite.
 
@@ -30,6 +30,7 @@ Par contre un réseau aléatoire de la même taille et degré moyen ne sera conn
 
 4. Calculez la distribution des degrés et tracez-la avec `gnuplot` (ou avec votre outil préféré) d'abord en échelle linéaire, ensuite en échelle log-log. Est-ce qu'on observe une ligne droite en log-log ? Que cela nous indique ? Tracez la distribution de Poisson avec la même moyenne pour comparaison. Utilisez la commande `fit` de `gnuplot` pour trouver les coefficients de la loi de puissance et tracez-la.
   
+
 #### Distribution des degrés  
 
 En utilisant gnuplot pour afficher nos résultat dans le fichier **dd_dblp.dat**, on obtient l'image suivante une échelle linéaire:
@@ -63,7 +64,7 @@ Pour savoir s'il s'agit d'un réseau "petit monde", il suffit de vérifier que $
 
 6. Utilisez les générateurs de GraphStream pour générer un réseau aléatoire et un réseau avec la méthode d'attachement préférentiel (Barabasi-Albert) qui ont la même taille et le même degré moyen. Refaites les mesures des questions précédentes pour ces deux réseaux. Les résultats expérimentaux correspondent-ils aux prédictions théoriques ? Comparez avec le réseau de collaboration. Que peut-on conclure ?
 
-### Génération d'un réseau aléatoire avec une méthode d'attachement préférentiel (Barabasi-Albert)
+#### Génération d'un réseau aléatoire avec une méthode d'attachement préférentiel (Barabasi-Albert)
 Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le coefficient de Clustering
 
 
@@ -98,11 +99,11 @@ Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le c
 
 
 
-#Question 7
+##Question 7
  - Le generateur WattsStrogatzGenerator nous reproduit un coefficient de clustering plus petite avec un réseau connexe.
  - Le nombre d'arrêt dépend de la probabilité.
 
-## Propagation dans un réseau
+##TP2:Propagation dans un réseau
 Les consignes sont les mêmes que pour le premier TP. On travaille sur les mêmes données et la problématique est proche. ([SNAP](https://snap.stanford.edu/data/com-DBLP.html))
 
 Nos collaborateurs scientifiques communiquent souvent par mail. Malheureusement pour eux, les pièces jointes de ces mails contiennent parfois des virus informatiques. On va étudier la propagation d'un virus avec les hypothèses suivantes :
@@ -140,9 +141,17 @@ Simulez la propagation du virus jour par jour pendant trois mois avec les scéna
 Le seuil épidémique du réseau avec stratégies d'immunisation aleatoire = 0.088
 Le seuil épidémique du réseau avec stratégies d'immunisation seclective = 0.166
 
+4. Pour chacun des trois scénarios, tracez l'évolution de la fraction d'infectés de la population non immunisée.
+
+![distribution des infections](/images/dinfection_dblp.png)
+
 En utilisant gnuplot pour afficher nos résultat dans le fichier **epidemic_first_case.dat**, on obtient l'image suivante une échelle linéaire:
 * la première simulation
 ![image info](data/FirstCaseHist.png)  
 
 * la simulation avec tout les cas
-![image info](data/AllCasesHist.png)  
+![image info](data/AllCasesHist.png)
+
+
+
+
