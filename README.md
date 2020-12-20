@@ -110,16 +110,18 @@ Nos collaborateurs scientifiques communiquent souvent par mail. Malheureusement 
 - Un individu envoie en moyenne un mail par semaine à chacun de ses collaborateurs.
 - Un individu met à jour son anti-virus en moyenne deux fois par mois. Cela nettoie son système mais ne le protège pas de nouvelles infections car le virus mute.
 - L'épidémie commence avec un individu infecté (patient zéro).
- - Le rapport entre beta et mu nous donne le taux de propagation dans le réseau.  
+ 
+
+Le rapport entre beta et mu nous donne le taux de propagation dans le réseau.  
  **beta = 1/7** car un individu envoie un mail par semaine en moyenne  
  **mu = 1/14** car la mise à jour de l'anti-virus est faite deux fois par mois donc 1 fois toutes les deux semaines.  
 Ce taux est égale à 2.0.
 
- - Le seuil épidémique du réseau de collaboration = 0.045
- - Le seuil épidémique du réseau aléatoire = 0.131
+Le seuil épidémique du réseau de collaboration = 0.045
+Le seuil épidémique du réseau aléatoire = 0.131
  
-  - Le seuil épidémique du réseau avec stratégies d'immunisation aleatoire = 0.088
-  - Le seuil épidémique du réseau avec stratégies d'immunisation seclective = 0.166
+Le seuil épidémique du réseau avec stratégies d'immunisation aleatoire = 0.088
+Le seuil épidémique du réseau avec stratégies d'immunisation seclective = 0.166
 
 En utilisant gnuplot pour afficher nos résultat dans le fichier **epidemic_first_case.dat**, on obtient l'image suivante une échelle linéaire:
 * la première simulation
