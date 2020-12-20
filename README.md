@@ -77,6 +77,7 @@ Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le c
     | $`\langle C \rangle`$ | 2.1839707 |
     
 
+    
     ![distribution des degrés](/images/ddegree_random.png)
     ![distribution des distances](/images/ddistance_random.png)
 
@@ -90,8 +91,9 @@ Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le c
     | $`\langle k \rangle`$ | 7.9931564 |
     | $`\langle C \rangle`$ | 4.8840521 |
     
-    ![distribution des degrés](/data/ddegree_preferential.png)
-    ![distribution des distances](/data/ddistance_preferential.png)
+    
+    ![distribution des degrés](/images/ddegree_preferential.png)
+    ![distribution des distances](/images/ddistance_preferential.png)
 
 
 
