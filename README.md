@@ -118,8 +118,12 @@ On a $`\beta = \frac{1}{7}`$ pour la probabilité de contaminer un collaborateur
 Donc Le rapport entre beta et mu nous donne le taux de propagation dans le réseau.  
  **beta = 1/7** car un individu envoie un mail par semaine en moyenne  
  **mu = 1/14** car la mise à jour de l'anti-virus est faite deux fois par mois donc 1 fois toutes les deux semaines.
+ 
+2. Quel est le seuil épidémique du réseau ?
 
-Le seuil épidémique du réseau de collaboration = 0.045
+On peut avoir le seuil avec $`\lambda c = \frac{\langle k \rangle}{\langle k^2 \rangle}`$ où $`\langle k \rangle = 6.622`$ et $`\langle k^2 \rangle = 144,631`$ qui vaut $`\lambda c \approx 0.046`$.
+
+Donc Le seuil épidémique du réseau de collaboration = 0.045
 Le seuil épidémique du réseau aléatoire = 0.131
  
 Le seuil épidémique du réseau avec stratégies d'immunisation aleatoire = 0.088
