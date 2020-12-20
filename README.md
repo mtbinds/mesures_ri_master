@@ -66,6 +66,30 @@ La distribution des distances indique la probabilité qu'un
 ### Génération d'un réseau aléatoire avec une méthode d'attachement préférentiel (Barabasi-Albert)
 Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le coefficient de Clustering
 
+
+    - Graphe aléatoire :
+
+    | Mesures               | Résultats |
+    | :-------------------- | :-------: |
+    | $`N`$                 |  317088   |
+    | $`L`$                 |  1110910  |
+    | $`\langle k \rangle`$ | 7.0069508 |
+    | $`\langle C \rangle`$ | 2.1839707 |
+
+    ![distribution des degrés](/image/ddegree_random.png)
+    ![distribution des distances](/image/ddistance_random.png)
+
+    - Graphe préférentiel :
+
+    | Mesures               | Résultats |
+    | :-------------------- | :-------: |
+    | $`N`$                 |  317082   |
+    | $`L`$                 |  1267243  |
+    | $`\langle k \rangle`$ | 7.9931564 |
+    | $`\langle C \rangle`$ | 4.8840521 |
+
+
+
 ## Question 7
  - Le generateur WattsStrogatzGenerator nous reproduit un coefficient de clustering plus petite avec un réseau connexe.
  - Le nombre d'arrêt dépend de la probabilité.
