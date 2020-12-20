@@ -70,15 +70,7 @@ import org.graphstream.stream.file.FileSourceEdge;
  */
 public class Propagation_Scen_Test {
 
-    public static void main(String[] args) throws InterruptedException {
-        long begin = System.currentTimeMillis();
-        exec(GraphUtils.readResource("DBLP", "com-dblp.ungraph.txt", new FileSourceEdge()));
-        exec(GraphUtils.readResource("Random", "random-graph.txt", new FileSourceDGS()));
-        exec(GraphUtils.readResource("Preferential", "preferential-graph.txt", new FileSourceDGS()));
-        long end = System.currentTimeMillis();
-        System.out.printf("%nExec in %d s%n", (end - begin) / 1000);
-    }
-
+    
     public static void exec(Graph g) throws InterruptedException {
         System.out.printf("%n%s%n%n", g.getId());
         double averageDegree = Toolkit.averageDegree(g);
