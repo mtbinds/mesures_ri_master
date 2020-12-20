@@ -104,7 +104,7 @@ Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le c
  - Le generateur WattsStrogatzGenerator nous reproduit un coefficient de clustering plus petite avec un réseau connexe.
  - Le nombre d'arrêt dépend de la probabilité.
 
-## TP2:Propagation dans un réseau
+## TP2: Propagation dans un réseau
 Les consignes sont les mêmes que pour le premier TP. On travaille sur les mêmes données et la problématique est proche. ([SNAP](https://snap.stanford.edu/data/com-DBLP.html))
 
 Nos collaborateurs scientifiques communiquent souvent par mail. Malheureusement pour eux, les pièces jointes de ces mails contiennent parfois des virus informatiques. On va étudier la propagation d'un virus avec les hypothèses suivantes :
