@@ -75,9 +75,11 @@ Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le c
     | $`L`$                 |  1110910  |
     | $`\langle k \rangle`$ | 7.0069508 |
     | $`\langle C \rangle`$ | 2.1839707 |
+    
 
-    ![distribution des degrés](/image/ddegree_random.png)
-    ![distribution des distances](/image/ddistance_random.png)
+    ![distribution des degrés](/data/ddegree_random.png)
+    ![distribution des distances](/data/ddistance_random.png)
+
 
     - Graphe préférentiel :
 
@@ -87,6 +89,9 @@ Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le c
     | $`L`$                 |  1267243  |
     | $`\langle k \rangle`$ | 7.9931564 |
     | $`\langle C \rangle`$ | 4.8840521 |
+    
+    ![distribution des degrés](/data/ddegree_preferential.png)
+    ![distribution des distances](/data/ddistance_preferential.png)
 
 
 
