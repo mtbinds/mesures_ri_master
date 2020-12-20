@@ -57,8 +57,6 @@ On peut en soutirer que notre réseau est un réseau de terrain.
 5. Maintenant on va calculer la distance moyenne dans le réseau. Le calcul des plus courts chemins entre toutes les paires de nœuds prendra plusieurs heures pour cette taille de réseau. C'est pourquoi on va estimer la distance moyenne par échantillonnage en faisant un parcours en largeur à partir de 1000 sommets choisis au hasard. L'hypothèse des six degrés de séparation se confirme-t-elle ? Est-ce qu'il s'agit d'un réseau petit monde ? Quelle sera la distance moyenne dans un réseau aléatoire avec les mêmes caractéristiques ? Tracez également la *distribution* des distances. Formulez une hypothèse sur la loi de cette distribution.
 
 ##### Distribution des distances 
-![distribution des distances](/image/ddistance_dblp.png)
-
 Pour savoir s'il s'agit d'un réseau "petit monde", il suffit de vérifier que $`\langle d \rangle = d_{max}`$ où $`d_{max} = \frac{\ln N}{\ln \langle k \rangle}`$.
    
 ![image info](data/plot_distances.png)
