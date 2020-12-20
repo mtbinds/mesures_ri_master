@@ -67,7 +67,6 @@ La distribution des distances indique la probabilité qu'un
 Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le coefficient de Clustering
 
 
-    - 
 > Graphe aléatoire :
 
   | Mesures               | Résultats |
@@ -86,12 +85,12 @@ Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le c
 
 > Graphe préférentiel :
 
-    | Mesures               | Résultats |
-    | :-------------------- | :-------: |
-    | $`N`$                 |  317082   |
-    | $`L`$                 |  1267243  |
-    | $`\langle k \rangle`$ | 7.9931564 |
-    | $`\langle C \rangle`$ | 4.8840521 |
+  | Mesures               | Résultats |
+  | :-------------------- | :-------: |
+  | $`N`$                 |  317082   |
+  | $`L`$                 |  1267243  |
+  | $`\langle k \rangle`$ | 7.9931564 |
+  | $`\langle C \rangle`$ | 4.8840521 |
     
     
 ![distribution des degrés](/images/ddegree_preferential.png)
