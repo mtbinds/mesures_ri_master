@@ -77,8 +77,8 @@ Avec une telle méthode on obtient les mêmes valeurs sauf la connexité et le c
     | $`\langle C \rangle`$ | 2.1839707 |
     
 
-    ![distribution des degrés](/data/ddegree_random.png)
-    ![distribution des distances](/data/ddistance_random.png)
+    ![distribution des degrés](/images/ddegree_random.png)
+    ![distribution des distances](/images/ddistance_random.png)
 
 
     - Graphe préférentiel :
