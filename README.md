@@ -131,6 +131,12 @@ Le seuil épidémique d'un réseau aléatoire au même degré moyen serait $`\la
 
 Donc le seuil épidémique du réseau aléatoire = 0.131
  
+Simulez la propagation du virus jour par jour pendant trois mois avec les scénarios suivants :
+
+- On ne fait rien pour empêcher l'épidémie
+- On réussit à convaincre 50 % des individus de mettre à jour en permanence leur anti-virus (immunisation aléatoire)
+- On réussit à convaincre 50 % des individus de convaincre un de leurs contacts de mettre à jour en permanence son anti-virus (immunisation sélective).
+
 Le seuil épidémique du réseau avec stratégies d'immunisation aleatoire = 0.088
 Le seuil épidémique du réseau avec stratégies d'immunisation seclective = 0.166
 
