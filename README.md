@@ -123,8 +123,13 @@ Donc Le rapport entre beta et mu nous donne le taux de propagation dans le rése
 
 On peut avoir le seuil avec $`\lambda c = \frac{\langle k \rangle}{\langle k^2 \rangle}`$ où $`\langle k \rangle = 6.622`$ et $`\langle k^2 \rangle = 144,631`$ qui vaut $`\lambda c \approx 0.046`$.
 
-Donc Le seuil épidémique du réseau de collaboration = 0.045
-Le seuil épidémique du réseau aléatoire = 0.131
+Donc Le seuil épidémique du réseau de collaboration = 0.046
+
+3. Comparez avec le seuil théorique d'un réseau aléatoire du même degré moyen.
+
+Le seuil épidémique d'un réseau aléatoire au même degré moyen serait $`\lambda c = \frac{1}{\langle k \rangle + 1} \approx 0.131`$.  Cette différence entre les seuils épidémique est dûe à la divergence du degré de clustering.
+
+Donc le seuil épidémique du réseau aléatoire = 0.131
  
 Le seuil épidémique du réseau avec stratégies d'immunisation aleatoire = 0.088
 Le seuil épidémique du réseau avec stratégies d'immunisation seclective = 0.166
