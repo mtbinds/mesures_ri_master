@@ -139,11 +139,17 @@ Simulez la propagation du virus jour par jour pendant trois mois avec les scéna
 - On réussit à convaincre 50 % des individus de convaincre un de leurs contacts de mettre à jour en permanence son anti-virus (immunisation sélective).
 
 Le seuil épidémique du réseau avec stratégies d'immunisation aleatoire = 0.088
+
 Le seuil épidémique du réseau avec stratégies d'immunisation seclective = 0.166
 
 4. Pour chacun des trois scénarios, tracez l'évolution de la fraction d'infectés de la population non immunisée.
 
 ![distribution des infections](/images/dinfection_dblp.png)
+
+5. Que peut-on conclure ?
+
+Pour le cas de l'immunisation aléatoire, dans des conditions normales de simulation, on observe au mieux un ralentissement de la propagation du virus. Au contraire, la sélective permet d'entraver la propagation malgrès le fait que le nombre de noeuds immunisés soit inférieur ou égal à celui des immunisés aléatoirement. 
+
 
 En utilisant gnuplot pour afficher nos résultat dans le fichier **epidemic_first_case.dat**, on obtient l'image suivante une échelle linéaire:
 * la première simulation
